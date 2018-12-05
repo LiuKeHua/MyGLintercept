@@ -1,0 +1,69 @@
+SET(MyCategory ThirdParty)
+SET(MyProjectName CoronaStatic)
+
+ADD_DEFINITIONS(-D GLI_CHANGES)
+ADD_DEFINITIONS(-D _CRT_SECURE_NO_WARNINGS)
+
+SET(LIB_EXTERNAL_DEPS
+  
+)
+
+INCLUDE_DIRECTORIES(
+  ${CMAKE_CURRENT_SOURCE_DIR}/files
+  ${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b
+  ${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.1
+  ${CMAKE_CURRENT_SOURCE_DIR}/libungif-4.1.0
+  ${CMAKE_CURRENT_SOURCE_DIR}/zlib-1.1.4
+)
+
+file(GLOB_RECURSE files_SOUCE
+	${CMAKE_CURRENT_SOURCE_DIR}/files/*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/files/*.h
+	${CMAKE_CURRENT_SOURCE_DIR}/files/*.c
+)
+
+file(GLOB_RECURSE JPG_SOUCE
+	${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b/*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b/*.h
+	${CMAKE_CURRENT_SOURCE_DIR}/jpeg-6b/*.c
+)
+
+file(GLOB_RECURSE PNG_SOURCE
+	${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.1/*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.1/*.h
+	${CMAKE_CURRENT_SOURCE_DIR}/libpng-1.2.1/*.c
+)
+
+file(GLOB_RECURSE GIF_SOUCE
+	${CMAKE_CURRENT_SOURCE_DIR}/libungif-4.1.0/*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/libungif-4.1.0/*.h
+	${CMAKE_CURRENT_SOURCE_DIR}/libungif-4.1.0/*.c
+)
+
+file(GLOB_RECURSE ZLIB_SOUCE
+	${CMAKE_CURRENT_SOURCE_DIR}/zlib-1.1.4/*.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/zlib-1.1.4/*.h
+	${CMAKE_CURRENT_SOURCE_DIR}/zlib-1.1.4/*.c
+)
+
+
+source_group("File" FILES ${files_SOUCE})
+source_group("Jpg" FILES ${JPG_SOUCE})
+source_group("Png" FILES ${PNG_SOURCE})
+source_group("Gif" FILES ${GIF_SOUCE})
+source_group("Zlib" FILES ${ZLIB_SOUCE})
+
+
+SET(LIB_SOURCES
+  ${files_SOUCE}
+  ${JPG_SOUCE}
+  ${PNG_SOURCE}
+  ${GIF_SOUCE}
+  ${ZLIB_SOUCE}
+)
+
+
+#get_filename_component(MyProjectName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+
+VSP_ADD_LIBRARY(${MyProjectName} STATIC)
+

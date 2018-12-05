@@ -1,0 +1,14 @@
+F:/OpenGL/glintercept/BUILD_VS2017/CMakeFiles/ALL_BUILD.dir
+F:/OpenGL/glintercept/BUILD_VS2017/CMakeFiles/ZERO_CHECK.dir
+F:/OpenGL/glintercept/BUILD_VS2017/Corona-1.0.2-Static/CMakeFiles/CoronaStatic.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/MainLib/CMakeFiles/OpenGL32.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLCStrike/CMakeFiles/GLCStrike.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLDebugContext/CMakeFiles/GLDebugContext.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLExtOverride/CMakeFiles/GLExtOverride.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLFramePing/CMakeFiles/GLFramePing.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLFreeCam/CMakeFiles/GLFreeCam.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/GLFuncStats/CMakeFiles/GLFuncStats.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/OGLE/CMakeFiles/OGLE.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/OGLE_Origin/CMakeFiles/OGLE_Origin.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Plugins/TestPlugin/CMakeFiles/TestPlugin.dir
+F:/OpenGL/glintercept/BUILD_VS2017/glintercept/Utils/CMakeFiles/Utils.dir
